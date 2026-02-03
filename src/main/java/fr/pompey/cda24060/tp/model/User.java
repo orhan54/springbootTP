@@ -6,18 +6,17 @@ import lombok.Generated;
 
 @Data
 @Entity
-@Table(name="Users")
+@Table(name="users")
 public class User {
 
     @Id
-    @Column(name="idUsers")
+    @Column(name="id_users")
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-
     private int idUsers;
 
-    @Column(name="user_firstName")
+    @Column(name="user_first_name")
     private String userFisrtName;
 
-    @Column(name="user_lastName")
+    @Column(name="user_last_name")
     private String userLastName;
 }
